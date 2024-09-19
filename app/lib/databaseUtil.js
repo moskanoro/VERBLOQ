@@ -1,6 +1,6 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 
-const uri = "mongodb+srv://mostapha:<db_password>@verbloq.nncxu.mongodb.net/?retryWrites=true&w=majority&appName=verbloq";
+const uri = "mongodb+srv://mostapha:123@verbloq.nncxu.mongodb.net/?retryWrites=true&w=majority&appName=verbloq";
 
 const client = new MongoClient(uri, {
   serverApi: {
