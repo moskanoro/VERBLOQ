@@ -89,7 +89,7 @@ export default function SignInPage() {
                   style={{
                     backgroundImage: `url(${post.fileUrl})`,
                     backgroundSize: 'cover', // Equivalent to object-cover
-                    backgroundPosition: 'top center', // Equivalent to object-top
+                    backgroundPosition: 'center', // Equivalent to object-top
                   }}
                 >
                   {/* Add an overlay to ensure text is readable */}
@@ -117,7 +117,7 @@ export default function SignInPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {posts.map((post) => (
           <div key={post._id} className="bg-white shadow-lg border rounded-lg p-6 transition-transform transform hover:scale-105">
-            {post.fileUrl && <img src={`${post.fileUrl}`} alt="Post Image" className="w-full max-h-60 object-cover object-top rounded-lg" />}
+            {post.fileUrl && <img src={`${post.fileUrl}`} alt="Post Image" className="w-full h-auto object-contain rounded-lg" />}
             <h3 className="font-bold text-xl mb-2 text-black">
               <Link href={`/post/${post._id}`} className="hover:underline">
                 {post.title}
