@@ -31,7 +31,7 @@ export default function Header() {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-lg font-bold">
                     <Link href='/' className="hover:text-gray-200 transition duration-200">
-                        Home
+                        Verbloq
                     </Link>
                 </div>
                 <nav className="space-x-4 text-sm">
